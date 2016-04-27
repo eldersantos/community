@@ -269,7 +269,7 @@ abstract class IndexType
             return (Query) value;
         }
         
-        QueryParser parser = new QueryParser( Version.LUCENE_30, keyOrNull, analyzer );
+        QueryParser parser = new QueryParser( Version.LUCENE_36, keyOrNull, analyzer );
         parser.setAllowLeadingWildcard( true );
         parser.setLowercaseExpandedTerms( toLowerCase );
         if ( contextOrNull != null && contextOrNull.getDefaultOperator() != null )
